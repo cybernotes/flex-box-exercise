@@ -3,3 +3,41 @@
 	margin: 0;
 	padding: 0;
 }
+
+.top-nav {
+	display: flex;
+	background: #000;
+	height: 50px;
+	align-items: center;
+}
+
+.top-nav a {
+	color: #fff;
+	text-decoration: none;
+	order-bottom: 5px solid  #000;
+	transition: .5s;
+}
+.top-nav a:hover {
+	color: #047dbf;
+	border-bottom: 5px solid  #047dbf;
+}
+
+.brand-text {
+	font-size: 30px;
+	margin-left: 15px;
+}
+
+.top-nav-list {
+	display: flex;
+	list-style: none;
+	margin-left: auto;
+}
+
+.top-nav-list li {
+	margin: 0px 15px;
+}
+
+.top-nav-list a {
+	padding: 5px;
+}
+
