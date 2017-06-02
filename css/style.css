@@ -4,17 +4,31 @@
 	padding: 0;
 }
 
+body {
+	padding-top: 32px;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+
 .top-nav {
 	display: flex;
 	background: #000;
 	height: 50px;
 	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 
 .top-nav a {
 	color: #fff;
 	text-decoration: none;
-	order-bottom: 5px solid  #000;
+	border-bottom: 5px solid  #000;
 	transition: .5s;
 }
 .top-nav a:hover {
@@ -41,3 +55,49 @@
 	padding: 5px;
 }
 
+.full-screen-bg {
+	height: calc(100vh - 50px);
+	width: 100%;
+	background-image: url("../images/large-yorkie.jpeg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	transition: background-image .5s;
+}
+
+.flex-row{
+	display: flex;
+}
+
+.col-4-2-1 {
+	width: 23%;
+	margin: 1%;
+	padding: 10px;
+}
+
+
+@media (max-width: 1200px) {
+	.full-screen-bg{
+		background-image: url("../images/medium-puppy.jpeg");
+	}
+	.flex-row{
+		flex-wrap: wrap;
+	}
+	.col-4-2-1 {
+		width: 48%;
+
+
+	}
+}
+
+@media (max-width: 600px) {
+	.full-screen-bg{
+		background-image: url("../images/small-puppy.jpeg");
+	}
+	.col-4-2-1{
+		width: 98%;
+	}
+}
